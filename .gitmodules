@@ -1,0 +1,6 @@
+[submodule "uWebSockets"]
+	path = uWebSockets
+	url = https://github.com/uNetworking/uWebSockets
+[submodule "HttpRouter"]
+	path = HttpRouter
+	url = https://github.com/uNetworking/HttpRouter

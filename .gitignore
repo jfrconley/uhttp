@@ -1,0 +1,9 @@
+lib/uws
+lib/router
+.idea
+build
+cmake-build-debug
+dist
+node_modules
+prebuilds
+yarn-error.log

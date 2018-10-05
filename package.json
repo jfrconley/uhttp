@@ -4,15 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gyp": "node-gyp rebuild",
+    "prebuild": "prebuildify --napi",
+    "prepareUWS": "cp -r uWebSockets/src lib/uws",
+    "prepareRouter": "cp -r HttpRouter lib/router"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "napi-macros": "^1.8.1",
     "node-gn": "^1.0.0",
     "node-gyp": "^3.8.0",
     "prebuildify": "^2.8.0",
     "tslint": "^5.11.0",
     "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "@types/node": "^10.11.0",
+    "find-my-way": "^1.15.3",
+    "node-addon-api": "^1.4.0",
+    "node-gyp-build": "^3.4.0",
+    "uws": "10.148.1"
   }
 }
